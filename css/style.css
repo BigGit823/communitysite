@@ -18,7 +18,10 @@ a:hover{
 
 
 
-
+.navbar{
+    background-color: #0269A4;
+    height: 80px;
+}
 
 
 .navbar-nav li a{
@@ -54,7 +57,7 @@ a:hover{
 
 
 
-.header{
+/* .header{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url('../images/frontbanner.jpg');
@@ -88,7 +91,7 @@ a:hover{
     z-index: -1;
     background: linear-gradient(to right, pink, blue);
 
-}
+} */
 
 /* .header_section{
 
@@ -156,6 +159,8 @@ a:hover{
 .wording{
     height:100px;
     border-bottom: 1px solid #ccc;
+    margin-top: 70px;
+ 
    
 
 
@@ -263,11 +268,11 @@ a:hover{
 .small_banner{
     
     padding-top: 45px;
-    height: 250px;
+    height: 300px;
     padding-bottom: 45px;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/166031.jpg');
     background-size: 100% 100%;
-    background-attachment: fixed;
+  
 }
 
 .contact_us{
@@ -661,6 +666,12 @@ padding-bottom: 30px;
   /*Responsive*/
 
  @media(max-width: 768px){
+
+    .navbar{
+   
+        height: 100px;
+        padding-bottom: 50px;
+    }
      
     
 
