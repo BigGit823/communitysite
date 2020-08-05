@@ -1046,6 +1046,15 @@ padding-bottom: 30px;
 
 
     }
+
+    @media(max-width: 361px){
+        
+        .wording p{
+            padding-left: 5px!important;
+            padding-right: 5px!important;
+            font-size: 15px!important;
+        }
+    }
         
         /* .footer-menu h2{
             
