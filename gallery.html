@@ -57,7 +57,7 @@
 
     </div> -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container text-uppercase p-2"> 
         <a class="navbar-brand" href="index.html"><img src='images/Webp.net-resizeimage (9).png'></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,6 +85,20 @@
           </div>
       </div>
           
+    </nav> -->
+
+    <nav class="navigation_bar">
+      <img src="images/logo.png">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html" target="_blank">ABOUT US</a></li>
+        <li><a href="services.html" target="_blank">SERVICES</a></li>
+        <li><a href="gallery.html" target="_blank">GALLERY</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+      </ul>
+      <label id="icon">
+        <i class="fa fa-bars"></i>
+      </label>
     </nav>
 
     <div class="gallery" id="gallery_section">   
@@ -231,7 +245,13 @@
             } // End if
           });
         });
-        
+
+        $(document).ready(function(){
+  $('#icon').click(function(){
+    $('ul').toggleClass('show');
+
+  });
+});
         
         
         

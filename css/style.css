@@ -14,11 +14,148 @@ a:hover{
     text-decoration: none;
 }
 
+.navigation_bar{
+
+    position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+    
+    
+    }
+    
+    nav{
+        height: 90px;
+        background: linear-gradient(to right, #2b5876, #4e4376);
+        overflow: auto;
+        
+    }
+    
+    nav img{
+        width: 120px;
+        position: absolute;
+        top: 6px;
+        margin-left: 90px!important;
+        
+    }
+    
+    nav ul{
+        float: right;
+        margin-right: 65px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 15px;
+    }
+    
+    nav ul li a{
+        position: relative;
+        color: white;
+        font-size: 14px;
+        padding: 5px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    nav ul li a:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #ff7230;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .2s linear;
+    
+    }
+    
+    nav li a:hover{
+        color: #ff7230!important;
+    } 
+    
+    nav ul li a:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+    
+    }
+    
+    nav #icon{
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    
+    }
+    
+    @media (max-width: 1048px){
+        label.logo{
+            font-size: 32px;
+            padding-left: 60px;
+        }
+        nav ul{
+            margin-right: 20px;
+        }
+        nav a{
+            font-size: 17px;
+        }
+    }
+    
+    @media (max-width: 909px){
+        nav #icon{
+            display: block;
+        }
+    
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, #2b5876, #4e4376);
+            top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .3s;
+         
+      
+        }
+    
+        nav ul li{
+            display: block;
+            padding-top: 30px;
+           
+         
+        
+        }
+    
+        nav a{
+            font-size: 2px;
+        }
+    
+        a.active, a:hover{
+            border: none;
+            color: black;
+        }
+    
+        nav ul.show{
+            left: 0;
+        }
+    }
 
 
 
 
-.navbar{
+
+
+
+
+ /* .navbar{
     background-color: #0269A4;
     height: 80px;
 }
@@ -52,7 +189,7 @@ a:hover{
 
 .navbar-nav li a:hover{
     color: #ff7230!important;
-}
+}  */
 
 
 
@@ -169,7 +306,7 @@ a:hover{
 .wording p{
     text-align: center;
     font-weight: bold;
-    padding-top: 25px;
+    padding-top: 35px;
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -697,7 +834,7 @@ padding-bottom: 30px;
       .wording p{
         text-align: center;
         font-weight: bold;
-        padding-top: 25px;
+        padding-top: 35px;
         font-size: 20px;
         font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -865,6 +1002,11 @@ padding-bottom: 30px;
 
     @media(max-width: 376px){   
 
+        nav img{
+            margin-left: 25px!important;
+            height: 75px;
+        }
+
         .center_div{
             margin-top: 150px;
             margin-left: 70px;
@@ -873,6 +1015,36 @@ padding-bottom: 30px;
         .submit_button{
             margin-left: -120px;
         }
+
+        .footer_logo img{
+            margin-left: 95px!important;
+        }
+
+        .footer-about-us p{
+            margin-left: 70px!important;
+        }
+
+        .footer-social{
+            margin-left: 70px!important;
+        }
+
+        .footer-wid-title{
+            margin-left: 70px!important;
+        }
+
+        .footer-newsletter h2{
+
+            margin-left: 100px!important;
+       
+
+        }
+
+        .copy-right p{
+            font-size: small!important;
+       
+        }
+
+
     }
         
         /* .footer-menu h2{
@@ -917,6 +1089,10 @@ padding-bottom: 30px;
 
     @media(max-width: 415px){   
 
+        nav img{
+            margin-left: 30px!important;
+        }
+
         #btn1 {
             margin-left: 10px;
         }
@@ -956,7 +1132,61 @@ padding-bottom: 30px;
 
     }
 
+    @media(max-width: 321px){
+        
+        .wording p{
+            font-size: 15px;
+            padding-top: 41px;
+
+        }
+
+        .humanity h1{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer_logo img{
+            margin-left: 65px!important;
+        }
+
+        .footer-about-us p{
+            margin-left: 40px!important;
+        }
+
+        .footer-social {
+            margin-left: 38px!important;
+        }
+
+        .footer-menu h2{
+            margin-left: 40px!important;
+
+        }
+
+        .footer-newsletter h2{
+            margin-left: 70px!important;
+        }
+
+        .subbtn{
+            margin-left: 190px!important;
+           
+        }
+
+     
+
+      
+
+
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+        nav img{
+            margin-left: 40px!important;
+        }
+
+        .wording p{
+            padding-top: 45px;
+        }
 
 
         .center_div h1{
@@ -1012,6 +1242,15 @@ padding-bottom: 30px;
 
     @media only screen and (min-width: 1023px) and (max-width: 1367px) { 
 
+        nav img{
+            margin-left: 50px!important;
+        }
+
+        .wording p{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         .center_div{
 
             margin-left: 170px;
@@ -1032,3 +1271,5 @@ padding-bottom: 30px;
 
 
     }
+
+   
