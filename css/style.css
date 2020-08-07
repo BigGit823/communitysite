@@ -337,6 +337,18 @@ a:hover{
     transition-timing-function: linear;
 }
 
+.news_title_button a{
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 60px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: black;
+    font-size: 1rem;   
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
 .news_title_button a:hover{
     color: white;
     background: #ff7230;
@@ -611,12 +623,15 @@ padding-bottom: 30px;
   }
   .newsletter-form input[type="submit"] {
       background: none repeat scroll 0 0 #5a88ca;
-      border: medium none;
-      color: #fff;
-      display: inline-block;
-      font-size: 18px;
-      padding: 7px 20px;
-      text-transform: uppercase;border: 1px solid #5a88ca;
+      border: 0.5px solid black;
+      border-radius: 10px;
+      margin: 60px 5px;
+      padding: 12px 35px;
+      outline: none;
+      color: white;
+      font-size: 1rem;   
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
   }
   .newsletter-form input[type="submit"]:hover {background: #222;border-color: #666}
   .newsletter-form {
@@ -1050,9 +1065,10 @@ padding-bottom: 30px;
     @media(max-width: 361px){
         
         .wording p{
-            padding-left: 5px!important;
-            padding-right: 5px!important;
+            padding-left: 10px!important;
+            padding-right: 10px!important;
             font-size: 15px!important;
+           
         }
     }
         
